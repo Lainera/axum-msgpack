@@ -1,6 +1,6 @@
 [package]
 name = "axum-msgpack"
-version = "0.3.0"
+version = "0.4.0"
 edition = "2021"
 description = "serialize/derserialize msgpack for axum"
 license = "MIT"
@@ -8,11 +8,12 @@ license = "MIT"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-axum = "0.6"
+axum = "0.7"
 serde = { version = "1.0", features = ["derive"] }
 rmp-serde = "1.1"
-hyper = "0.14"
+hyper = "1.1"
 mime = "0.3"
 
 [dev-dependencies]
-tokio = { version = "1.22", features = ["full"]}
+futures-util = "0.3"
+tokio = { version = "1.35", features = ["full"]}
